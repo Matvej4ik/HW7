@@ -1,2 +1,51 @@
 @import '../common/styles/_libs';
 @import './styles/test';
+.page-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    @media screen and (max-width: 768px) {
+  position: static;
+  top: initial;
+  left: initial;
+  transform: translate(0, 0);
+}
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.item {
+  height: 150px;
+  padding: 0.5rem;
+}
+.card-content {
+  height: 100%;
+  position: relative;
+  &item:nth-child(1) {
+    background: #3387ea;
+  }
+  &item:nth-child(2) {
+    background: #f9be3e;
+  }
+
+}
+.card-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  color: #FFF;
+}
