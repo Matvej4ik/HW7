@@ -1,5 +1,10 @@
 @import '../common/styles/_libs';
-@import './styles/test';
+@import '../common/styles/_grid';
+body {
+  box-sizing: border-box;
+  background-image: url("../common/images/pattern.jpg");
+}
+
 .page-wrapper {
   max-width: 820px;
   margin: 0 auto;
@@ -8,41 +13,83 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    @media screen and (max-width: 768px) {
-  position: static;
-  top: initial;
-  left: initial;
-  transform: translate(0, 0);
 }
-}
-.card-container {
+.block-wrapper{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
 }
-.item {
+.block-header {
+  padding: 0.5rem;
+  color: #FFF;
+}
+.card {
   height: 150px;
   padding: 0.5rem;
+  background: transparent;
+  border: none;
 }
-.card-content {
+.card__background {
   height: 100%;
   position: relative;
-  &item:nth-child(1) {
-    background: #3387ea;
-  }
-  &item:nth-child(2) {
-    background: #f9be3e;
-  }
-
 }
-.card-icon {
+.card-home > .card__background {
+  background: #3387ea;
+}
+.card-contact > .card__background {
+  background: #f9be3e;
+}
+.card-hire > .card__background {
+  background: #d3573e;
+}
+.card-photos > .card__background {
+  background: #59b0e2;
+}
+.card-about1 > .card__background {
+  background: #33af95;
+}
+.card-portfolio > .card__background {
+  background: #86a73f;
+}
+.card-blog > .card__background {
+  background: #151a26;
+}
+.card-chat > .card__background {
+  background: #7e5b8c;
+}
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    position: static;
+    top: initial;
+    left: initial;
+    transform: translate(0, 0)
+  }
+}
+.card__content {
+  display: flex;
+  color: #FFF;
+}
+.card__image {
+  height: 100%;
+  flex: 0 0 30%;
+  background-image: url("../common/images/blog-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card__description {
+  flex: 0 0 70%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.card__icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card-title {
+.card__title {
   position: absolute;
   bottom: 0;
   left: 0;
