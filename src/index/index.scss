@@ -2,7 +2,7 @@
 @import '../common/styles/_grid';
 body {
   box-sizing: border-box;
-  background-image: url("../common/images/pattern.jpg");
+  background-image: url("../../assets/images/pattern.jpg");
 }
 
 .page-wrapper {
@@ -73,9 +73,7 @@ body {
 .card__image {
   height: 100%;
   flex: 0 0 30%;
-  background-image: url("../common/images/blog-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../../assets/images/blog-image.png") no-repeat center;
   background-size: cover;
 }
 .card__description {
