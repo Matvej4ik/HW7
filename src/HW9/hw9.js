@@ -1,7 +1,6 @@
 function randomInteger(min, max) {
-    var rand = min - 0.5 + Math.random() * (max - min + 1)
-    rand = Math.round(rand);
-    return rand;
+    let rand = Math.random() * (max - min) + min;
+    return Math.round ( rand );
 }
 
-alert(randomInteger(1, 2));
+console.log ( randomInteger (1, 100) );
