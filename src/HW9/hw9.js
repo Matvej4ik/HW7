@@ -29,3 +29,11 @@ console.log  (isEmpty(obj.property));
 // else { 
 //     return false;
 // }
+
+
+//Task 4
+let salaries = {
+    John: 400,
+    Jack: 20000,
+    test: «asdasdasd»
+}
