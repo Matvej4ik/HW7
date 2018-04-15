@@ -35,5 +35,5 @@ console.log  (isEmpty(obj.property));
 let salaries = {
     John: 400,
     Jack: 20000,
-    test: «asdasdasd»
+    test: 'asdasdasd'
 }
