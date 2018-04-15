@@ -19,10 +19,13 @@ console.log (user);
 
 //Task 3
 function isEmpty(obj) {
-    let property = 45654;    
-}
+    let obj = 45;
+if (isNaN(isEmpty)) let property = false; 
+else let property = true;
+console.log (property);
+};
 
-console.log  (isEmpty(obj.property));
+
 // if (isEmpty(obj) == 0) {
 //     console.log (isEmpty);
 // }
